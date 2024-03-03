@@ -1,9 +1,9 @@
 #!/bin/bash
 
 PROFILE=default
-REGION=us-east-1
-PRODUCTID=$(aws servicecatalog describe-product --name DEV-eks-provisioner-product-us-east-1 --region us-east-1 --query ProductViewSummary.ProductId --output text)
-PROVISIONARTIFACTID=$(aws servicecatalog describe-product --name DEV-eks-provisioner-product-us-east-1 --region us-east-1 --query 'ProvisioningArtifacts[0].Id' --output text)
+REGION=ap-southeast-2
+PRODUCTID=prod-nbhbdmzd4sr6c
+PROVISIONARTIFACTI=pa-j36k2p67a56hu
 
 
 aws servicecatalog provision-product \
